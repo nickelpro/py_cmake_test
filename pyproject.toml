@@ -21,7 +21,7 @@ dependencies = []
 
 [build-system]
 requires = [
-  "py-build-cmake@git+https://github.com/tttapa/py-build-cmake@5eb95903d6a761615d25f20c4697d205b61da3e1",
+  "py-build-cmake@git+https://github.com/tttapa/py-build-cmake@b6f7b28b31ced799f286c2e6c53c77f9959785e4",
 ]
 build-backend = "py_build_cmake.build"
 
