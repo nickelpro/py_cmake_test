@@ -20,7 +20,9 @@ urls = { "Documentation" = "https://github.com/nickelpro/py_cmake_test" }
 dependencies = []
 
 [build-system]
-requires = ["py-build-cmake==0.3.0a3"]
+requires = [
+  "py-build-cmake@git+https://github.com/tttapa/py-build-cmake@713f074d3d77e0fe15c0f36b16d1843c0c555dc8",
+]
 build-backend = "py_build_cmake.build"
 
 [tool.py-build-cmake.module]
