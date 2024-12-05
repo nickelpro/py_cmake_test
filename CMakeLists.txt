@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.30)
 
 project(pycmaketest LANGUAGES CXX VERSION 1.0.0)
 
-find_package(Python3 3.13 REQUIRED COMPONENTS Development.Module)
+find_package(Python3 3.13 REQUIRED COMPONENTS Interpreter Development.Module)
 
 Python3_add_library(pycmaketest MODULE)
 target_compile_features(pycmaketest PRIVATE cxx_std_23)
