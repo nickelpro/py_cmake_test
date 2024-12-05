@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.25)
+cmake_minimum_required(VERSION 3.30)
 
 project(pycmaketest LANGUAGES CXX VERSION 1.0.0)
 
