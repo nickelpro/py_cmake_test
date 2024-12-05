@@ -20,9 +20,7 @@ urls = { "Documentation" = "https://github.com/nickelpro/py_cmake_test" }
 dependencies = []
 
 [build-system]
-requires = [
-  "py-build-cmake@git+https://github.com/tttapa/py-build-cmake@c8e610478b40a503a22f6ee39b2c6734b4d801b7",
-]
+requires = ["py-build-cmake==0.2.0a14"]
 build-backend = "py_build_cmake.build"
 
 [tool.py-build-cmake.module]
@@ -33,6 +31,8 @@ include = ["CMakeLists.txt", "src"]
 
 [tool.py-build-cmake.cmake]
 minimum_version = "3.25"
+find_python = false
+find_python3 = false
 config = "Release"
 build_type = "Release"
 build_args = ["-j"]
