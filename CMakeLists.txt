@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.30)
 
 project(pycmaketest LANGUAGES CXX VERSION 1.0.0)
 
+message("$ENV{VIRTUAL_ENV}")
 find_package(Python3 3.13 REQUIRED COMPONENTS Interpreter Development.Module)
 
 Python3_add_library(pycmaketest MODULE)
